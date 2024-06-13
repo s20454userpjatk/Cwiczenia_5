@@ -1,0 +1,12 @@
+using Animals_App.Model;
+
+namespace Animals_App.Services;
+
+public interface IAnimalsService
+{
+    IEnumerable<Animal> GetAnimals();
+    int CreateAnimal(Animal animal);
+    Animal? GetAnimal(int idAnimal);
+    int UpdateAnimal(Animal animal);
+    int DeleteAnimal(int idAnimal);
+}
